@@ -1,4 +1,4 @@
-package sam.spangular.librarymanagementsystem;
+package sam.spangular.librarymanagementsystem.controllers;
 
 
 import lombok.RequiredArgsConstructor;
@@ -11,7 +11,7 @@ import sam.spangular.librarymanagementsystem.services.BookService;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/v1/book")
-public class BookController {
+public class BookRestController {
     private final BookService bookService;
     @GetMapping
     public ResponseEntity<?> getBooks() {
